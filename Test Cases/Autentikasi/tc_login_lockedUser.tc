@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>tc_login_lockedUser</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>8dec49c1-2e30-4be3-b14f-bc7d4ae5b7ba</testCaseGuid>
+</TestCaseEntity>

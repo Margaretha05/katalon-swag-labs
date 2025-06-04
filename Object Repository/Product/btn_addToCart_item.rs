@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>btn_addToCart_item</name>
+   <tag></tag>
+   <elementGuidId>15288414-cfe0-42e2-83f6-2d5b8b12647c</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id='${item}']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id='${item}']</value>
+      <webElementGuid>e195ea4b-98e2-42a5-ab8a-cff249dd3b24</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

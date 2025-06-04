@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>txt_messageError_invalid</name>
+   <tag></tag>
+   <elementGuidId>98a9e00e-3121-49b7-bfb5-f409133babf0</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//h3[@data-test='title']&#xd;
+</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//h3[@data-test='error']&#xd;
+</value>
+      <webElementGuid>c0ae6bd2-3f67-46cb-8aee-1f1a5bd922b8</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>
