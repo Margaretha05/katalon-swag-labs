@@ -3,11 +3,11 @@
    <description></description>
    <name>btn_addToCart_item</name>
    <tag></tag>
-   <elementGuidId>15288414-cfe0-42e2-83f6-2d5b8b12647c</elementGuidId>
+   <elementGuidId>a339f1ff-fa3a-4ab6-be5f-a30a9af10e68</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id='${item}']</value>
+         <value>//*[@id='${id_item}']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -18,7 +18,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id='${item}']</value>
-      <webElementGuid>e195ea4b-98e2-42a5-ab8a-cff249dd3b24</webElementGuid>
+      <value>//*[@id='${id_item}']</value>
+      <webElementGuid>1c5d8d37-aa4f-4cc8-a52c-1053f9377a59</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

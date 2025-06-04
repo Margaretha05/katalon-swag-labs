@@ -1,3 +1,5 @@
+import java.awt.geom.Arc2D.Float
+
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
@@ -19,15 +21,18 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('Autentikasi/tc_login_valid'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Product/btn_addToCart_item', [('item') : 'add-to-cart-sauce-labs-backpack']))
+WebUI.click(findTestObject('Product/btn_addToCart_item', [('id_item') : id_item1]))
 
-WebUI.click(findTestObject('Product/btn_addToCart_item', [('item') : 'add-to-cart-sauce-labs-bike-light']))
+WebUI.click(findTestObject('Product/btn_addToCart_item', [('id_item') : id_item2]))
 
 WebUI.click(findTestObject('Product/icon_cart'))
 
 WebUI.verifyElementText(findTestObject('Product/txt_yourCart'), 'Your Cart')
 
-WebUI.verifyElementText(findTestObject('Product/txt_item', [('textValue') : 'Sauce Labs Backpack']), 'Sauce Labs Backpack')
+WebUI.verifyElementVisible(findTestObject('Product/txt_item', [('item_name') : name_item1]), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementText(findTestObject('Product/txt_item', [('textValue') : 'Sauce Labs Bike Light']), 'Sauce Labs Bike Light')
+WebUI.verifyElementVisible(findTestObject('Product/txt_item', [('item_name') : name_item2]), FailureHandling.STOP_ON_FAILURE)
+
+
+
 

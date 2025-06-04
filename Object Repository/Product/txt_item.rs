@@ -7,7 +7,10 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[@data-test=&quot;inventory-item-name&quot; and text()='${textValue}']</value>
+         <value>//div[@data-test=&quot;inventory-item-name&quot; and text()='${item_name}']&#xd;
+&#xd;
+&#xd;
+</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -18,7 +21,10 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[@data-test=&quot;inventory-item-name&quot; and text()='${textValue}']</value>
-      <webElementGuid>1d07ba56-0ec5-4325-9c16-9c5e07d8e107</webElementGuid>
+      <value>//div[@data-test=&quot;inventory-item-name&quot; and text()='${item_name}']&#xd;
+&#xd;
+&#xd;
+</value>
+      <webElementGuid>bce0a78d-c63a-4f45-8dde-eaf4267c5a14</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
