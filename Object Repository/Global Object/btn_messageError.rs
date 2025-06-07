@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>btn_messageError</name>
+   <tag></tag>
+   <elementGuidId>c995b4a0-7240-4738-a8f1-f4ec05788240</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//button[@class='error-button']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//button[@class='error-button']</value>
+      <webElementGuid>0b7aebe7-c876-46a2-9f98-6e7c76b24377</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

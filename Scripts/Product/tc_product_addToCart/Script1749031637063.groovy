@@ -1,3 +1,4 @@
+import java.awt.geom.Arc2D.Float as Float
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
@@ -17,17 +18,17 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('https://www.saucedemo.com/')
+WebUI.callTestCase(findTestCase('Autentikasi/tc_login_valid'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('Login/txt_username'), 'standard_user')
+WebUI.click(findTestObject('Product/btn_addToCart_item', [('id_item') : id_item1]))
 
-WebUI.setText(findTestObject('Login/txt_password'), 'secret_sauce123')
+WebUI.click(findTestObject('Product/btn_addToCart_item', [('id_item') : id_item2]))
 
-WebUI.click(findTestObject('Login/btn_login'))
+WebUI.click(findTestObject('Product/icon_cart'))
 
-WebUI.verifyElementText(findTestObject('Global Object/txt_messageError'), 'Epic sadface: Username and password do not match any user in this service')
+WebUI.verifyElementText(findTestObject('Global Object/txt_titlePage'), 'Your Cart')
 
-WebUI.click(findTestObject('Global Object/btn_messageError'))
+WebUI.verifyElementVisible(findTestObject('Product/txt_itemName', [('item_name') : name_item1]), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementNotPresent(findTestObject('Global Object/btn_messageError'), 0)
+WebUI.verifyElementVisible(findTestObject('Product/txt_itemName', [('item_name') : name_item2]), FailureHandling.STOP_ON_FAILURE)
 

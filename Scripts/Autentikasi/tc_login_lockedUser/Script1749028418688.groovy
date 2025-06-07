@@ -25,9 +25,9 @@ WebUI.setText(findTestObject('Login/txt_password'), 'secret_sauce')
 
 WebUI.click(findTestObject('Login/btn_login'))
 
-WebUI.verifyElementText(findTestObject('Login/txt_messageError_invalid'), 'Epic sadface: Sorry, this user has been locked out.')
+WebUI.verifyElementText(findTestObject('Global Object/txt_messageError'), 'Epic sadface: Sorry, this user has been locked out.')
 
-WebUI.click(findTestObject('Login/close_messageError'))
+WebUI.click(findTestObject('Global Object/btn_messageError'))
 
-WebUI.verifyElementNotPresent(findTestObject('Login/close_messageError'), 0)
+WebUI.verifyElementNotPresent(findTestObject('Global Object/btn_messageError'), 0)
 

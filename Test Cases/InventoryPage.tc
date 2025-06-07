@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>InventoryPage</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>2c4fcd2c-7a78-4ee9-b026-fe71c7f15b8b</testCaseGuid>
+</TestCaseEntity>

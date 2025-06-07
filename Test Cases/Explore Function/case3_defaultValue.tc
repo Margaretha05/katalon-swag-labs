@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>case3_defaultValue</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>463f66b0-65a6-49f6-bfcf-579335b06ddc</testCaseGuid>
+</TestCaseEntity>

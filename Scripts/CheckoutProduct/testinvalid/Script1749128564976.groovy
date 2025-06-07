@@ -14,20 +14,21 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import fillForm.FillFormCheckout as FillFormCheckout
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('https://www.saucedemo.com/')
+//FillFormCheckout form = new FillFormCheckout()
+WebUI.callTestCase(findTestCase('Product/tc_product_addToCart'), [('name_item1') : 'Sauce Labs Backpack', ('name_item2') : 'Sauce Labs Bike Light'
+        , ('id_item1') : 'add-to-cart-sauce-labs-backpack', ('id_item2') : 'add-to-cart-sauce-labs-bike-light'], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('Login/txt_username'), 'standard_user')
+WebUI.click(findTestObject('Product/btn_checkout'))
 
-WebUI.setText(findTestObject('Login/txt_password'), 'secret_sauce123')
+WebUI.verifyElementText(findTestObject('Global Object/txt_titlePage'), 'Checkout: Your Information')
 
-WebUI.click(findTestObject('Login/btn_login'))
+CustomKeywords.'fillForm.FillFormCheckout.fillForm'()
 
-WebUI.verifyElementText(findTestObject('Global Object/txt_messageError'), 'Epic sadface: Username and password do not match any user in this service')
+//CustomKeywords.'fillForm.FillFormCheckout.fillForm'('franz', 'sinaga', '')
 
-WebUI.click(findTestObject('Global Object/btn_messageError'))
-
-WebUI.verifyElementNotPresent(findTestObject('Global Object/btn_messageError'), 0)
+CustomKeywords.'fillForm.FillFormCheckout.clickButton'()
 

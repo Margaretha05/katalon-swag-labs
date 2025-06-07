@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>tc_checkout_product_fromDetailPage</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>3e030599-a7b9-4c6c-9954-b15a6763da20</testCaseGuid>
+</TestCaseEntity>

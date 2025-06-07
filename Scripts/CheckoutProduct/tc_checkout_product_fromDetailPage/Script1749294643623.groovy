@@ -17,17 +17,22 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('https://www.saucedemo.com/')
+WebUI.callTestCase(findTestCase('InventoryPages/tc_inventory_detailProduct'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('Login/txt_username'), 'standard_user')
+WebUI.verifyElementText(findTestObject('InventoryProduct/btn_addtoCart'), 'Add to cart')
 
-WebUI.setText(findTestObject('Login/txt_password'), 'secret_sauce123')
+WebUI.click(findTestObject('InventoryProduct/btn_addtoCart'))
 
-WebUI.click(findTestObject('Login/btn_login'))
+WebUI.click(findTestObject('Product/icon_cart'))
 
-WebUI.verifyElementText(findTestObject('Global Object/txt_messageError'), 'Epic sadface: Username and password do not match any user in this service')
+WebUI.verifyElementText(findTestObject('Global Object/txt_titlePage'), 'Your Cart')
 
-WebUI.click(findTestObject('Global Object/btn_messageError'))
+WebUI.click(findTestObject('Product/btn_checkout'))
 
-WebUI.verifyElementNotPresent(findTestObject('Global Object/btn_messageError'), 0)
+CustomKeywords.'fillForm.FillFormCheckout.fillForm'()
 
+CustomKeywords.'fillForm.FillFormCheckout.clickButton'()
+
+WebUI.click(findTestObject('CheckoutOverview/btn_finish'))
+
+WebUI.verifyElementText(findTestObject('Global Object/txt_titlePage'), 'Checkout: Complete!')

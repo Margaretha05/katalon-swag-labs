@@ -1,61 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>tc_add_productToCart (impParameter)</name>
+   <name>tc_inventory_sortProduct</name>
    <tag></tag>
    <comment></comment>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>5bac17a2-ca55-4177-8493-8371ea3d6378</testCaseGuid>
+   <testCaseGuid>f6f459ba-22de-4302-8afc-f26c79f9ff93</testCaseGuid>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>23218266-808d-4916-86eb-d37ded9e6df9</variableId>
+      <variableId>aaae50ff-2a34-48f0-9a67-5500a8c85324</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>ff7c0168-e820-428c-91d9-b24576f6c813</variableId>
+      <variableId>edca10db-20b6-4be9-beed-228f016cbad0</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>f621d37b-e320-4648-a1d5-04b2c039e8f7</variableId>
+      <variableId>290583ff-cb19-4b74-b974-5ab9ce24d76b</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>26b1a972-89fa-463f-bf38-67e159ae5492</variableId>
+      <variableId>f102ed65-e2c6-4a89-b7eb-624d48a38d8d</variableId>
    </variableLinks>
    <variable>
-      <defaultValue>'Sauce Labs Backpack'</defaultValue>
+      <defaultValue>'Name (A to Z)'</defaultValue>
       <description></description>
-      <id>23218266-808d-4916-86eb-d37ded9e6df9</id>
+      <id>aaae50ff-2a34-48f0-9a67-5500a8c85324</id>
       <masked>false</masked>
-      <name>name_item1</name>
+      <name>sort_by_A_to_Z</name>
    </variable>
    <variable>
-      <defaultValue>'Sauce Labs Bike Light'</defaultValue>
+      <defaultValue>'Name (Z to A)'</defaultValue>
       <description></description>
-      <id>ff7c0168-e820-428c-91d9-b24576f6c813</id>
+      <id>edca10db-20b6-4be9-beed-228f016cbad0</id>
       <masked>false</masked>
-      <name>name_item2</name>
+      <name>sort_by_Z_to_A</name>
    </variable>
    <variable>
-      <defaultValue>'add-to-cart-sauce-labs-backpack'</defaultValue>
+      <defaultValue>'Price (low to high)'</defaultValue>
       <description></description>
-      <id>f621d37b-e320-4648-a1d5-04b2c039e8f7</id>
+      <id>290583ff-cb19-4b74-b974-5ab9ce24d76b</id>
       <masked>false</masked>
-      <name>id_item1</name>
+      <name>sort_by_low_to_high</name>
    </variable>
    <variable>
-      <defaultValue>'add-to-cart-sauce-labs-bike-light'</defaultValue>
+      <defaultValue>'Price (high to low)'</defaultValue>
       <description></description>
-      <id>26b1a972-89fa-463f-bf38-67e159ae5492</id>
+      <id>f102ed65-e2c6-4a89-b7eb-624d48a38d8d</id>
       <masked>false</masked>
-      <name>id_item2</name>
+      <name>sort_by_high_to_low</name>
    </variable>
 </TestCaseEntity>

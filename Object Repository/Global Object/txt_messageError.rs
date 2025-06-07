@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>txt_messageError_invalid</name>
+   <name>txt_messageError</name>
    <tag></tag>
    <elementGuidId>98a9e00e-3121-49b7-bfb5-f409133babf0</elementGuidId>
    <selectorCollection>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>close_messageError</name>
+   <name>txt_titlePage</name>
    <tag></tag>
-   <elementGuidId>c995b4a0-7240-4738-a8f1-f4ec05788240</elementGuidId>
+   <elementGuidId>d2549e19-c554-4b31-8eab-d2957a9539b1</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//button[@class='error-button']</value>
+         <value>//span[@data-test=&quot;title&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -18,7 +18,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//button[@class='error-button']</value>
-      <webElementGuid>0b7aebe7-c876-46a2-9f98-6e7c76b24377</webElementGuid>
+      <value>//span[@data-test=&quot;title&quot;]</value>
+      <webElementGuid>0cf84a0d-6a39-46be-9831-14154a6311f4</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

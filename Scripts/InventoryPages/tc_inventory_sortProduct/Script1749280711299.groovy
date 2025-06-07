@@ -17,17 +17,26 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('https://www.saucedemo.com/')
 
-WebUI.setText(findTestObject('Login/txt_username'), 'standard_user')
 
-WebUI.setText(findTestObject('Login/txt_password'), 'secret_sauce123')
+WebUI.callTestCase(findTestCase('Autentikasi/tc_login_valid'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Login/btn_login'))
+WebUI.click(findTestObject('InventoryProduct/icon_sort'))
 
-WebUI.verifyElementText(findTestObject('Global Object/txt_messageError'), 'Epic sadface: Username and password do not match any user in this service')
+WebUI.click(findTestObject('InventoryProduct/list_sortInventory', [('option_value') : sort_by_A_to_Z]))
 
-WebUI.click(findTestObject('Global Object/btn_messageError'))
+WebUI.delay(2)
 
-WebUI.verifyElementNotPresent(findTestObject('Global Object/btn_messageError'), 0)
+CustomKeywords.'sorting.SortingText.SortAscending'(findTestObject('InventoryProduct/txt_inventoryName'))
 
+WebUI.click(findTestObject('InventoryProduct/list_sortInventory', [('option_value') : sort_by_Z_to_A]))
+
+WebUI.delay(2)
+
+WebUI.click(findTestObject('InventoryProduct/list_sortInventory', [('option_value') : sort_by_low_to_high]))
+
+WebUI.delay(2)
+
+WebUI.click(findTestObject('InventoryProduct/list_sortInventory', [('option_value') : sort_by_high_to_low]))
+
+WebUI.delay(2)

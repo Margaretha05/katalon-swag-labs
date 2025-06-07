@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>icon_sort</name>
+   <tag></tag>
+   <elementGuidId>7a5f84a1-df27-4239-a13b-2a3a77190c62</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@data-test=&quot;product-sort-container&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@data-test=&quot;product-sort-container&quot;]</value>
+      <webElementGuid>3e5397b0-2d61-4b12-b621-743446492998</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

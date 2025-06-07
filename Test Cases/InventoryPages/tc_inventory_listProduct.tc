@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>tc_inventory_listProduct</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>ce71f43a-6cc9-4001-8bc6-6334c1d0d6a9</testCaseGuid>
+</TestCaseEntity>

@@ -25,5 +25,5 @@ WebUI.setText(findTestObject('Login/txt_password'), 'secret_sauce')
 
 WebUI.click(findTestObject('Login/btn_login'))
 
-WebUI.verifyElementText(findTestObject('Login/txt_products'), 'Products')
+WebUI.verifyElementText(findTestObject('Global Object/txt_titlePage'), 'Products')
 

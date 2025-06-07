@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>list_sortInventory</name>
+   <tag></tag>
+   <elementGuidId>57996f8a-79b0-454a-936b-efb376864ea8</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//div/span[@class=&quot;select_container&quot;]/select/option[text()='${option_value}']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//div/span[@class=&quot;select_container&quot;]/select/option[text()='${option_value}']</value>
+      <webElementGuid>e46fb0ca-d433-447d-abf5-8a1a77e3c7f2</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>
